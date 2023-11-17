@@ -6,4 +6,5 @@ azure-cli
 azure-functions-core-tools-bin
 msodbcsql17
 python310
-jabref.bin
+jabref-bin
+ctpv-git

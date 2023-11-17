@@ -18,6 +18,7 @@ texlive-meta
 biber
 lf
 ttf-linux-libertine
+otf-comicshanns-nerd
 ttf-jetbrains-mono-nerd
 libnotify
 pandoc
@@ -32,3 +33,4 @@ podman
 unixodbc
 bottom
 zathura
+kitty
