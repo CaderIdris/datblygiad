@@ -1,5 +1,8 @@
 FROM quay.io/toolbx-images/archlinux-toolbox
 
+LABEL version="1.0"
+LABEL description="Datblygiad (EN: development) is an Arch Linux based container designed to be used in a development environment. It installs multiple packages from the Arch repositories, PyPI (via pipx) and npm. It also uses packages from the AUR by using yay. It is intended to be used with distrobox but can be used as a docker or podman container as well."
+
 # Create temp user for unpriveledged operations
 RUN useradd --no-create-home --shell=/bin/false build && usermod -L build && echo "build ALL = NOPASSWD: /usr/bin/pacman" >> /etc/sudoers 
 
