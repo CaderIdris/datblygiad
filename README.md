@@ -50,6 +50,7 @@ It is intended to be used with distrobox but can be used as a docker or podman c
 |unixodbc|pacman|ODBC drivers|
 |bottom|pacman|CLI process/system monitor with graphs|
 |zathura|pacman|PDF viewer|
+|zathura-pdf-poppler|pacman|PDF plugin for Zathura|
 |kitty|pacman|Terminal|
 |sqlitebrowser|pacman|View sqlite files|
 |vscodium-bin|aur|Open version of VSCode|
