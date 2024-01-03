@@ -2,7 +2,7 @@
 	datblygiad
 </h1>
 
-![Build](https://github.com/CaderIdris/datblygiad/actions/workflows/build.yml)
+[![Publish image](https://github.com/CaderIdris/datblygiad/actions/workflows/build.yml/badge.svg)](https://github.com/CaderIdris/datblygiad/actions/workflows/build.yml)
 
 ---
 
