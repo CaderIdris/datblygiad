@@ -54,4 +54,5 @@ jobs:
           tags: |
             docker.pkg.github.com/${{ env.OWNER_LC }}/datblygiad/datblygiad:${{ github.sha }}
             docker.pkg.github.com/${{ env.OWNER_LC }}/datblygiad/datblygiad:${{ steps.date.outputs.date }}
+            docker.pkg.github.com/${{ env.OWNER_LC }}/datblygiad/datblygiad:latest
 
