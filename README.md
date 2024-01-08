@@ -53,6 +53,7 @@ It is intended to be used with distrobox but can be used as a docker or podman c
 |zathura-pdf-poppler|pacman|PDF plugin for Zathura|
 |kitty|pacman|Terminal|
 |sqlitebrowser|pacman|View sqlite files|
+|direnv|pacman|Automatically loads environmental variables from whitelisted .env files when switching directories in terminal|
 |vscodium-bin|aur|Open version of VSCode|
 |azure-cli|aur|Interact with azure services from CLI|
 |azure-functions-core-tools-bin|aur|Build, test and publish azure functions from CLI|
