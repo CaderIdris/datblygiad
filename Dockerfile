@@ -6,7 +6,11 @@ LABEL summary="Datblygiad (EN: development) is an Arch Linux based container des
 	org.opencontainers.image.description="Datblygiad (EN: development) is an Arch Linux based container designed to be used in a development environment. It installs multiple packages from the Arch repositories, PyPI (via pipx) and npm. It also uses packages from the AUR by using yay. It is intended to be used with distrobox but can be used as a docker or podman container as well."
 
 # Create temp user for unpriveledged operations
-RUN useradd --no-create-home --shell=/bin/false build && usermod -L build && echo "build ALL = NOPASSWD: /usr/bin/pacman" >> /etc/sudoers 
+RUN \
+	cp /etc/sudoers /tmp/sudoers && \
+	useradd --no-create-home --shell=/bin/false build && \
+	usermod -L build && \
+	echo "build ALL = NOPASSWD: /usr/bin/pacman" >> /etc/sudoers 
 
 # Copy package lists
 COPY *.pkg /tmp/
@@ -38,4 +42,6 @@ RUN \
 	while IFS= read -r pkg; do npm install -g $pkg; done < /tmp/npm.pkg
 
 # Delete temp user
-RUN userdel build
+RUN \
+	userdel build && \
+	mv /tmp/sudoers /etc/sudoers
