@@ -22,6 +22,7 @@ otf-comicshanns-nerd
 ttf-jetbrains-mono-nerd
 libnotify
 pandoc
+pandoc-crossref
 python-pipx
 tldr
 lolcat

@@ -83,6 +83,7 @@ It is intended to be used with distrobox but can be used as a docker or podman c
 |texlive-meta|pacman|LaTeX and multiple packages|
 |biber|pacman|LaTeX reference tool|
 |pandoc|pacman|Text file converter|
+|pandoc-crossref|pacman|Cross reference filter|
 |jabref-bin|aur|Bibliography manager|
 |@marp-team/marp-cli|npm|Presentations from markdown files|
 |markdown-preview|npm|Show markdown file in browser|
