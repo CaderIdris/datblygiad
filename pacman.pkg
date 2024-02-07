@@ -39,3 +39,4 @@ sqlitebrowser
 zathura-pdf-poppler
 direnv
 just
+ruff-lsp
