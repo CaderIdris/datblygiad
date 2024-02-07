@@ -55,6 +55,7 @@ It is intended to be used with distrobox but can be used as a docker or podman c
 |sqlitebrowser|pacman|View sqlite files|
 |direnv|pacman|Automatically loads environmental variables from whitelisted .env files when switching directories in terminal|
 |just|pacman|Alternative to make|
+|ruff-lsp|pacman|LSP for python linting|
 |vscodium-bin|aur|Open version of VSCode|
 |azure-cli|aur|Interact with azure services from CLI|
 |azure-functions-core-tools-bin|aur|Build, test and publish azure functions from CLI|
@@ -76,6 +77,9 @@ It is intended to be used with distrobox but can be used as a docker or podman c
 |lua|pacman|Lua|
 |powershell-bin|aur|Powershell scripting language|
 |processing|aur|Processing 4 + IDE|
+|python39|pacman|Python 3.9|
+|python310|pacman|Python 3.10|
+|python312|pacman|Python 3.12|
 
 ## Documents
 |Name|Repository|Use|
