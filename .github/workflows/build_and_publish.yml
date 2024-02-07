@@ -33,7 +33,6 @@ jobs:
       - name: Gather image data from recipe
         run: |
           echo "IMAGE_NAME=datblygiad" >> $GITHUB_ENV
-          echo "IMAGE_DESCRIPTION=Archlinux based container containing software I use" >> $GITHUB_ENV
           echo "IMAGE_VERSION=1.0.0" >> $GITHUB_ENV
 
       - name: Generate tags
@@ -84,7 +83,6 @@ jobs:
           labels: |
             org.opencontainers.image.title=${{ env.IMAGE_NAME }}
             org.opencontainers.image.version=${{ env.IMAGE_VERSION }}
-            org.opencontainers.image.description=${{ env.IMAGE_DESCRIPTION }}
 
       # Workaround bug where capital letters in your GitHub username make it impossible to push to GHCR.
       # https://github.com/macbre/push-to-ghcr/issues/12
