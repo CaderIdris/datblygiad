@@ -77,6 +77,9 @@ It is intended to be used with distrobox but can be used as a docker or podman c
 |lua|pacman|Lua|
 |powershell-bin|aur|Powershell scripting language|
 |processing|aur|Processing 4 + IDE|
+|python39|pacman|Python 3.9|
+|python310|pacman|Python 3.10|
+|python312|pacman|Python 3.12|
 
 ## Documents
 |Name|Repository|Use|
