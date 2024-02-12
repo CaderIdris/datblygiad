@@ -56,6 +56,9 @@ It is intended to be used with distrobox but can be used as a docker or podman c
 |direnv|pacman|Automatically loads environmental variables from whitelisted .env files when switching directories in terminal|
 |just|pacman|Alternative to make|
 |ruff-lsp|pacman|LSP for python linting|
+|nushell|pacman|Alternative shell, great for reading data files|
+|jq|pacman|Parses json files|
+|yq|pacman|Parses yaml, toml and xml files|
 |vscodium-bin|aur|Open version of VSCode|
 |azure-cli|aur|Interact with azure services from CLI|
 |azure-functions-core-tools-bin|aur|Build, test and publish azure functions from CLI|
