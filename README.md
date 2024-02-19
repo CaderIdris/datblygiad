@@ -57,13 +57,17 @@ It is intended to be used with distrobox but can be used as a docker or podman c
 |just|pacman|Alternative to make|
 |ruff-lsp|pacman|LSP for python linting|
 |nushell|pacman|Alternative shell, great for reading data files|
+|zoxide|pacman|Terminal navigation|
 |jq|pacman|Parses json files|
 |yq|pacman|Parses yaml, toml and xml files|
+|zoxide|pacman|cd with added extras|
+|qemu-full|pacman|VM backend|
 |vscodium-bin|aur|Open version of VSCode|
 |azure-cli|aur|Interact with azure services from CLI|
 |azure-functions-core-tools-bin|aur|Build, test and publish azure functions from CLI|
 |msodbcsql17|aur|SQL Server driver|
 |ctpv-git|aur|Image previews for lf|
+|quickgui-bin|aur|VM manager|
 |asciinema|PyPI|Record terminal to file for playback|
 |cookiecutter|PyPI|Create directories with templates|
 |pipenv|PyPI|Python virtual environments with built-in dependency management|

@@ -43,3 +43,5 @@ ruff-lsp
 nushell
 yq
 jq
+zoxide
+qemu-full
