@@ -9,4 +9,5 @@ jabref-bin
 ctpv-git
 python39
 python310
+python312-perf
 quickgui-bin

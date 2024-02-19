@@ -60,7 +60,6 @@ It is intended to be used with distrobox but can be used as a docker or podman c
 |zoxide|pacman|Terminal navigation|
 |jq|pacman|Parses json files|
 |yq|pacman|Parses yaml, toml and xml files|
-|zoxide|pacman|cd with added extras|
 |qemu-full|pacman|VM backend|
 |vscodium-bin|aur|Open version of VSCode|
 |azure-cli|aur|Interact with azure services from CLI|
