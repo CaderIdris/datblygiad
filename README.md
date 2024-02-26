@@ -62,6 +62,7 @@ It is intended to be used with distrobox but can be used as a docker or podman c
 |yq|pacman|Parses yaml, toml and xml files|
 |qemu-full|pacman|VM backend|
 |samba|pacman|File sharing|
+|acpi|pacman|Used to monitor battery in tmux|
 |vscodium-bin|aur|Open version of VSCode|
 |azure-cli|aur|Interact with azure services from CLI|
 |azure-functions-core-tools-bin|aur|Build, test and publish azure functions from CLI|
