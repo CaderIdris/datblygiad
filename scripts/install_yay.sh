@@ -6,4 +6,4 @@ git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si --noconfirm
 yay --save --answerclean All --answerdiff All
-yay --save --nocleanmenu --nodiffmenu
+yay --save --cleanmenu=false --diffmenu=false
