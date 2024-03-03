@@ -63,6 +63,7 @@ It is intended to be used with distrobox but can be used as a docker or podman c
 |qemu-full|pacman|VM backend|
 |samba|pacman|File sharing|
 |acpi|pacman|Used to monitor battery in tmux|
+|vifm|pacman|Terminal based file browser|
 |vscodium-bin|aur|Open version of VSCode|
 |azure-cli|aur|Interact with azure services from CLI|
 |azure-functions-core-tools-bin|aur|Build, test and publish azure functions from CLI|
@@ -75,6 +76,7 @@ It is intended to be used with distrobox but can be used as a docker or podman c
 |jrnl|PyPI|Simple journal app for command line|
 |termtosvg|PyPI|Output terminal to svg file|
 |azurite|npm|Emulate azure storage|
+
 
 ### Programming Languages
 
@@ -97,6 +99,7 @@ It is intended to be used with distrobox but can be used as a docker or podman c
 |pandoc|pacman|Text file converter|
 |pandoc-crossref|pacman|Cross reference filter|
 |jabref-bin|aur|Bibliography manager|
+|ttf-twemoji|aur|Emoji font|
 |@marp-team/marp-cli|npm|Presentations from markdown files|
 |markdown-preview|npm|Show markdown file in browser|
 |browser-sync|npm|Host html file locally|
