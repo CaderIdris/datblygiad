@@ -34,7 +34,7 @@ podman
 unixodbc
 bottom
 zathura
-kitty
+wezterm
 sqlitebrowser
 zathura-pdf-poppler
 direnv

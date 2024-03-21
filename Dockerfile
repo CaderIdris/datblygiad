@@ -13,7 +13,9 @@ RUN \
 	echo "build ALL = NOPASSWD: /usr/bin/pacman" >> /etc/sudoers 
 
 # Copy package lists
-COPY *.pkg /tmp/
+COPY packages/*.pkg /tmp/
+
+RUN tree /tmp/
 
 # Upgrade packages
 RUN \
