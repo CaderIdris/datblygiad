@@ -12,18 +12,14 @@ RUN \
 	usermod -L build && \
 	echo "build ALL = NOPASSWD: /usr/bin/pacman" >> /etc/sudoers 
 
-# Copy package lists
-COPY packages/*.pkg /tmp/
-
-RUN tree /tmp/
+# Copy files lists
+COPY files/ /
 
 # Upgrade packages
 RUN \
 	pacman -Syu --noconfirm
 RUN \
-	while IFS= read -r pkg; do pacman -S --verbose --noconfirm $pkg; done < /tmp/pacman.pkg
-# Copy scripts
-COPY ./scripts/ /tmp/scripts
+	while IFS= read -r pkg; do pacman -S --verbose --noconfirm $pkg; done < /tmp/packages/pacman.pkg
 
 # Install yay as temp user and install packages
 RUN mkdir -p /home/build/{.gnupg,.config/pacman} && chown -R build:users /home/build
@@ -31,17 +27,17 @@ USER build
 RUN \
 	bash /tmp/scripts/install_yay.sh
 RUN \
-	while IFS= read -r pkg; do yay -S --noconfirm $pkg; done < /tmp/yay.pkg
+	while IFS= read -r pkg; do yay -S --noconfirm $pkg; done < /tmp/packages/yay.pkg
 
 USER root
 # Install pipx packages
 RUN \
-	while IFS= read -r pkg; do PIPX_HOME=/opt/pipx PIPX_BIN_DIR=/usr/local/bin pipx install $pkg; done < /tmp/pipx.pkg
+	while IFS= read -r pkg; do PIPX_HOME=/opt/pipx PIPX_BIN_DIR=/usr/local/bin pipx install $pkg; done < /tmp/packages/pipx.pkg
 
 
 # Install npm packages
 RUN \
-	while IFS= read -r pkg; do npm install -g $pkg; done < /tmp/npm.pkg
+	while IFS= read -r pkg; do npm install -g $pkg; done < /tmp/packages/npm.pkg
 
 # Delete temp user
 RUN \

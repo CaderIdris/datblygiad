@@ -51,7 +51,7 @@ It is intended to be used with distrobox but can be used as a docker or podman c
 |bottom|pacman|CLI process/system monitor with graphs|
 |zathura|pacman|PDF viewer|
 |zathura-pdf-poppler|pacman|PDF plugin for Zathura|
-|kitty|pacman|Terminal|
+|wezterm|pacman|Terminal|
 |sqlitebrowser|pacman|View sqlite files|
 |direnv|pacman|Automatically loads environmental variables from whitelisted .env files when switching directories in terminal|
 |just|pacman|Alternative to make|
@@ -85,7 +85,6 @@ It is intended to be used with distrobox but can be used as a docker or podman c
 |python|pacman|Python|
 |rustup|pacman|Rust|
 |lua|pacman|Lua|
-|powershell-bin|aur|Powershell scripting language|
 |processing|aur|Processing 4 + IDE|
 |python39|pacman|Python 3.9|
 |python310|pacman|Python 3.10|
