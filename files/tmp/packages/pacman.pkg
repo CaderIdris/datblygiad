@@ -48,3 +48,7 @@ qemu-full
 samba
 acpi
 vifm
+gnupg
+pass
+libsixel
+silicon
