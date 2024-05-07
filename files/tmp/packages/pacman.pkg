@@ -52,11 +52,10 @@ gnupg
 pass
 libsixel
 silicon
-kwayland5
-qt5-x11extras
 ccid
 opensc
 pcsc-tools
 ollama
 inkscape
 systemd
+qt6-base
