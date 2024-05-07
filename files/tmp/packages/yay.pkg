@@ -8,7 +8,8 @@ jabref-bin
 ctpv-git
 python39
 python310
-python312-perf
+python311
+python313
 quickgui-bin
 ttf-twemoji
 vifmimg-git
