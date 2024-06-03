@@ -60,3 +60,5 @@ inkscape
 systemd
 qt6-base
 dunst
+glow
+tree-sitter-cli
