@@ -9,7 +9,6 @@ LABEL summary="Datblygiad (EN: development) is an Arch Linux based container des
 RUN pacman-key --init
 
 RUN \
-	cp /etc/sudoers /tmp/sudoers && \
 	useradd --no-create-home --shell=/bin/false build && \
 	usermod -L build && \
 	echo "build ALL = NOPASSWD: /usr/bin/pacman" >> /etc/sudoers 
@@ -44,4 +43,4 @@ RUN \
 # Delete temp user
 RUN \
 	userdel build && \
-	mv /tmp/sudoers /etc/sudoers
+	rm /etc/sudoers
