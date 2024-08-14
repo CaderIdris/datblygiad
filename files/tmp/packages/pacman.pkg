@@ -16,7 +16,6 @@ npm
 ripgrep
 texlive-meta
 biber
-lf
 ttf-linux-libertine
 otf-comicshanns-nerd
 ttf-jetbrains-mono-nerd
@@ -28,9 +27,9 @@ tldr
 lolcat
 cowsay
 ctags
+podman
 docker
 docker-buildx
-podman
 unixodbc
 bottom
 zathura
@@ -58,11 +57,7 @@ pcsc-tools
 ollama
 inkscape
 systemd
-qt6-base
 dunst
 glow
 tree-sitter-cli
 fzf
-kwayland5
-kguiaddons
-kwindowsystem

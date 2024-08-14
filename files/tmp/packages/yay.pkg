@@ -1,8 +1,4 @@
-toilet
-vscodium-bin
 processing
-azure-cli
-azure-functions-core-tools-bin
 msodbcsql17
 jabref-bin
 ctpv-git
@@ -15,3 +11,4 @@ ttf-twemoji
 vifmimg-git
 pass-git-helper
 termpdf-git
+pinentry-rofi
