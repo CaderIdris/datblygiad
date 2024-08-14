@@ -1,4 +1,4 @@
-FROM quay.io/toolbx-images/archlinux-toolbox
+FROM quay.io/archlinux/archlinux
 
 LABEL summary="Datblygiad (EN: development) is an Arch Linux based container designed to be used in a development environment. It installs multiple packages from the Arch repositories, PyPI (via pipx) and npm. It also uses packages from the AUR by using yay. It is intended to be used with distrobox but can be used as a docker or podman container as well." \
 	usage="To be used with distrobox" \
@@ -6,6 +6,8 @@ LABEL summary="Datblygiad (EN: development) is an Arch Linux based container des
 	org.opencontainers.image.description="Datblygiad (EN: development) is an Arch Linux based container designed to be used in a development environment. It installs multiple packages from the Arch repositories, PyPI (via pipx) and npm. It also uses packages from the AUR by using yay. It is intended to be used with distrobox but can be used as a docker or podman container as well."
 
 # Create temp user for unpriveledged operations
+RUN pacman-key --init
+
 RUN \
 	cp /etc/sudoers /tmp/sudoers && \
 	useradd --no-create-home --shell=/bin/false build && \
