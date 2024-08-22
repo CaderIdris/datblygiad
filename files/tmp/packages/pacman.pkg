@@ -1,3 +1,4 @@
+sudo
 base-devel
 neovim
 zsh
@@ -34,7 +35,6 @@ docker-buildx
 unixodbc
 bottom
 zathura
-wezterm
 sqlitebrowser
 zathura-pdf-poppler
 direnv
@@ -52,6 +52,7 @@ gnupg
 pass
 libsixel
 silicon
+pscslite
 ccid
 opensc
 pcsc-tools
