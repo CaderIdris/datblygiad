@@ -58,8 +58,6 @@ opensc
 pcsc-tools
 ollama
 inkscape
-systemd
-dunst
 glow
 tree-sitter-cli
 fzf
