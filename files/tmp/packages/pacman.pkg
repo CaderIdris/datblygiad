@@ -7,7 +7,6 @@ pyenv
 rustup
 lua
 tmux
-starship
 figlet
 chezmoi
 curl
@@ -62,3 +61,4 @@ inkscape
 glow
 tree-sitter-cli
 fzf
+tig
