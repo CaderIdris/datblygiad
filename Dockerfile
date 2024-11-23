@@ -34,7 +34,7 @@ RUN \
 USER root
 # Install pipx packages
 RUN \
-	while IFS= read -r pkg; do PIPX_HOME=/opt/pipx PIPX_BIN_DIR=/usr/local/bin pipx install $pkg; done < /tmp/packages/pipx.pkg
+	while IFS= read -r pkg; do PIPX_HOME=/opt/pipx PIPX_BIN_DIR=/usr/local/bin pipx install "$pkg"; done < /tmp/packages/pipx.pkg
 
 
 # Install npm packages
