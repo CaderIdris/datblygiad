@@ -3,3 +3,4 @@ cookiecutter
 pipenv
 jrnl
 termtosvg
+"huggingface_hub[cli]"
