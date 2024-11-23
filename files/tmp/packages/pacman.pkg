@@ -1,5 +1,6 @@
 sudo
 base-devel
+blas-openblas
 neovim
 zsh
 python
