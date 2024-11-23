@@ -45,7 +45,6 @@ nushell
 yq
 jq
 zoxide
-qemu-full
 samba
 acpi
 vifm
