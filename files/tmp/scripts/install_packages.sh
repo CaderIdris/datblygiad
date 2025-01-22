@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -eou pipefail
+
 PKGS_YML_PATH=/tmp/packages.yml
 
 # PACMAN

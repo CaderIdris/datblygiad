@@ -25,6 +25,8 @@ pacman:  # Install packages from the official ArchLinux repositories
       __doc__: "Faster grep"
     tmux:
       __doc__: "Terminal multiplexer, useful for multiple tabs/split terminal/keeping sessions persistent"
+    fzf:
+      __doc__: "Fuzzy finder"
     tig:
       __doc__: "TUI for git"
     nushell:
