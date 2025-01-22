@@ -1,0 +1,155 @@
+pacman:  # Install packages from the official ArchLinux repositories
+  system:
+    # Anything that relates to the system. 
+    # This includes libraries, essential tools and package managers.
+    curl:
+      __doc__: "Transfer data to and from remote server."
+    libnotify:
+      __doc__: "Sends desktop notifications to a notification daemon. Useful when using shell plugins that notify when commands complete."
+    tk:
+      __doc__: "Cross platform widget toolkit to build/use simple GUIs"
+    unixodbc:
+      __doc__: "Access data sources that use ODBC API"
+    python-pipx:
+      __doc__: "Package manager for installing python packages"
+    npm:
+      __doc__: "Package manager for installing node packages"
+
+  terminal_dev_tools:
+    # Anything useful for general development.
+    direnv:
+      __doc__: "Autoload .env files in root directory if explicitly whitelisted by user."
+    just:
+      __doc__: "Project/directory specific command runner"
+    ripgrep:
+      __doc__: "Faster grep"
+    tmux:
+      __doc__: "Terminal multiplexer, useful for multiple tabs/split terminal/keeping sessions persistent"
+    tig:
+      __doc__: "TUI for git"
+    nushell:
+      __doc__: "Non-POSIX shell focused on manipulating data"
+    zsh:
+      __doc__: "Easily customisable shell"
+    bottom:
+      __doc__: "System monitor TUI"
+    man-db:
+      __doc__: "Manual for commands"
+    tldr:
+      __doc__: "Simple man pages"
+    pass:
+      __doc__: "Encrypted local password manager for CLI applications"
+    zoxide:
+      __doc__: "cd replacement that can use shortened paths."
+
+  terminal_pretty:
+    # Anything that makes the terminal nicer.
+    figlet:
+      __doc__: "Fancy ascii text."
+    bat:
+      __doc__: "Fancy cat designed to output nice looking documents."
+    exa:
+      __doc__: "Fancy ls."
+    fastfetch:
+      __doc__: "Outputs system information into terminal"
+    libsixel:
+      __doc__: "Used to show images in terminal."
+    glow:
+      __doc__: "Render markdown documents in the terminal."
+    lolcat:
+      __doc__: "Colour text in terminal."
+    cowsay:
+      __doc__: "Make a cow say something."
+
+  text_editors:
+    # Text editors and related tools.
+    neovim:
+      __doc__: "Lua-configured text editor based on VIM."
+    tree-sitter-cli:
+      __doc__: "Parses text documents. Used by Neovim plugins for a range of purposes."
+    silicon:
+      __doc__: "Render code to fancy screenshots."
+    ctags:
+      __doc__: "Parse code for tags representing different objects (e.g. functions, classes, variables)"
+
+  latex:
+    # LaTeX and related tools.
+    texlive-meta:
+      __doc__: "Just about any LaTeX package you could ever need."
+    biber:
+      __doc__: "Bibliography manager for LaTeX."
+    zathura:
+      __doc__: "Show pdfs."
+    zathura-pdf-poppler:
+      __doc__: "Let Zathura actually show PDFs."
+    pandoc:
+      __doc__: "Convert documents from one format to another (e.g Tex to DOCx)."
+    pandoc-crossref:
+      __doc__: "Plugin to aid referencing when using pandoc."
+    inkscape:
+      __doc__: "Convert images to different formats."
+
+  python:
+    # Python and related tools.
+    python:
+      __doc__: "Python programming language."
+    pyenv:
+      __doc__: "Manage python versions."
+    ruff-lsp:
+      __doc__: "Language server for Python."
+    uv:
+      __doc__: "Fast virtual environment manager for Python."
+
+  rust:
+    # Rust and related tools.
+    rustup:
+      __doc__: "Manage rust installations."
+
+  lua:
+    # Lua and related tools.
+    lua:
+      __doc__: "Lua programming language."
+
+  customisation:
+    # Customisation of environment.
+    chezmoi:
+      __doc__: "Sync dotfiles with remote repository."
+
+  fonts:
+    # Just fonts 🤷
+    otf-comicshanns-nerd:
+      __doc__: "Comic Shanns font patched with NerdFont symbols."
+    ttf-jetbrains-mono-nerd:
+      __doc__: "Jetbrains Mono font patched with Nerdfont symbols."
+    ttf-linux-libertine:
+      __doc__: "Linux Libertine font."
+
+npm:  # Install packages from npm
+
+  local_webserver:
+    # Webservers for local development
+    "@mryhryki/markdown-preview":
+      __doc__: "Preview markdown files in the browser with live updating."
+    browser-sync:
+      __doc__: "Preview webpages in the browser with live updating."
+
+pypi:  # Install tools from PyPI. Currently installed using pipx.
+  terminal_tools:
+    # Tools used in the terminal
+    asciinema:
+      __doc__: "Record terminal."
+    termtosvg:
+      __doc__: "Convert terminal output to svg."
+    cookiecutter:
+      __doc__: "Customisable directory/project templating tool."
+
+  package_manager:
+    # Other package managers
+    pipenv:
+      __doc__: "Useful package manager for Python projects. Slowly migrating to uv though as it can be slow."
+
+aur:  # Install from the AUR, currently using yay
+  fonts:
+    # Just fonts 🤷
+    ttf-twemoji:
+      __doc__: "Emoji. That's it."
