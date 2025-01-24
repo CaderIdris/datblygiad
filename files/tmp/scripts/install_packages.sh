@@ -30,7 +30,7 @@ done
 echo "npm packages installed"
 echo "---"
 
-PYPI_PKG_GROUPS=$(yq -r '.pypi | keys | @sh' $PKGS_YML_PATH)
+PYPI_PKG_GROUPS=$(yq -r '.pypi | keys | @sh' $PKGS_YML_PATH | tr -d \')
 for grp in $PYPI_PKG_GROUPS
 do
 	echo "Group: ${grp}"
@@ -40,7 +40,7 @@ done
 echo "PyPI packages installed"
 echo "---"
 
-AUR_PKG_GROUPS=$(yq -r '.aur | keys | @sh' $PKGS_YML_PATH)
+AUR_PKG_GROUPS=$(yq -r '.aur | keys | @sh' $PKGS_YML_PATH | tr -d \')
 # Create temporary build user to install yay
 echo "Setting up build user"
 cp /etc/sudoers /etc/sudoers.bak
