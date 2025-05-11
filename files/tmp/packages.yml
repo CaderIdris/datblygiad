@@ -95,12 +95,12 @@ pacman:  # Install packages from the official ArchLinux repositories
     # Python and related tools.
     python:
       __doc__: "Python programming language."
-    pyenv:
-      __doc__: "Manage python versions."
-    ruff-lsp:
+    ruff:
       __doc__: "Language server for Python."
     uv:
-      __doc__: "Fast virtual environment manager for Python."
+      __doc__: "Package manager that uses pyproject.toml instead of a separate file, fast and good"
+    python-pipenv:
+      __doc__: "Not using this anymore, backwards compatability for old projects"
 
   rust:
     # Rust and related tools.
@@ -127,7 +127,6 @@ pacman:  # Install packages from the official ArchLinux repositories
       __doc__: "Linux Libertine font."
 
 npm:  # Install packages from npm
-
   local_webserver:
     # Webservers for local development
     "@mryhryki/markdown-preview":
@@ -144,11 +143,6 @@ pypi:  # Install tools from PyPI. Currently installed using pipx.
       __doc__: "Convert terminal output to svg."
     cookiecutter:
       __doc__: "Customisable directory/project templating tool."
-
-  package_manager:
-    # Other package managers
-    pipenv:
-      __doc__: "Useful package manager for Python projects. Slowly migrating to uv though as it can be slow."
 
 aur:  # Install from the AUR, currently using yay
   fonts:
