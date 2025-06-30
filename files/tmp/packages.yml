@@ -14,6 +14,8 @@ pacman:  # Install packages from the official ArchLinux repositories
       __doc__: "Package manager for installing python packages"
     npm:
       __doc__: "Package manager for installing node packages"
+    acpi:
+      __doc__: "Monitors battery status"
 
   terminal_dev_tools:
     # Anything useful for general development.
