@@ -46,7 +46,7 @@ jobs:
       - name: Get current date
         id: date
         # run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
-        run: echo "name=date::$(date +'%Y-%m-%d')"
+        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
 
       - name: set lower case owner name
         run: |
